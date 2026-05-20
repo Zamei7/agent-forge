@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --accent: #0ea5e9;
+  --accent-hover: #0284c7;
+  --surface: #1a1a2e;
+  --surface-hover: #16213e;
+  --border: #2a2a4a;
+  --muted: #6b7280;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Gradient text */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-cyan-300;
+}
+
+/* Glass card */
+.glass-card {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl;
+}
+
+/* Glow effect */
+.glow {
+  box-shadow: 0 0 20px rgba(14, 165, 233, 0.3),
+              0 0 60px rgba(14, 165, 233, 0.1);
+}
+
+/* Agent card hover */
+.agent-card {
+  @apply glass-card p-6 transition-all duration-300;
+}
+.agent-card:hover {
+  @apply border-sky-500/50 -translate-y-1;
+  box-shadow: 0 10px 40px rgba(14, 165, 233, 0.15);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
