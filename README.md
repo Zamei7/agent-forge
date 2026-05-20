@@ -1,4 +1,4 @@
-# 🛠️ AgentForge — Decentralized AI Agent Marketplace
+# 🛠️ AgentForge — Decentralized AI Agent Marketplace - Build by kurazame7@gmail.com
 
 > Create, share, and monetize AI agents powered by Xiaomi MiMo V2.5
 
