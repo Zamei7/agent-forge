@@ -107,7 +107,7 @@
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/agentforge.git
+git clone https://github.com/zamei7/agentforge.git
 cd agentforge
 
 # Install dependencies
